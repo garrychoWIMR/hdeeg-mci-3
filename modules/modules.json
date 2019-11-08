@@ -344,10 +344,6 @@
 			 "table_id" : "91000106",
 			 "url" : "tasks/Spatialnav_upload.html"
 		},
-		"BL_MSpatialnav" : {
-			 "table_id" : "91000106",
-			 "url" : "tasks/Spatialnav_mornupload.html"
-		},
 		"BL_EVENING_KDT":{
 			"table_id" : "91000122",
 			"url" : "tasks/File_upload.html"
@@ -536,10 +532,6 @@
 		"FUP_Spatialnav" : {
 			 "table_id" : "91000099",
 			 "url" : "tasks/Spatialnav_upload.html"
-		},
-		"FUP_MSpatialnav" : {
-			 "table_id" : "",
-			 "url" : "tasks/Spatialnav_mornupload.html"
 		},
 		"FUP_EVENING_KDT":{
 			"table_id" : "91000120",

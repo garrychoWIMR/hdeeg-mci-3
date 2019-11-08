@@ -8,7 +8,7 @@
 
         VmInclude:__CURRENT_PATH__/task-data.js
         //-------------------------------------
-        _task_fields="Document,Description,Evening Practice 1 File|File_1,Evening Practice 1|eveningprac1,Evening Practice 2 File|File_2,Evening Practice 2|eveningprac2,Evening Practice 3 File|File_3,Evening Practice 3|eveningprac3,Evening Practice 4 File|File_4,Evening Practice 4|eveningprac4,Evening Practice 5 File|File_5,Evening Practice 5|eveningprac5,Evening Practice 6 File|File_6,Evening Recall 1|eveningrecall1,Evening Practice 1 File|File_7,Evenig Recall 2|eveningrecall2,Location";
+        _task_fields="Document,Description,pm_upload,am_upload,questionnaire_upload ";
         _fields="_Form,Status|S3,Notes|NT,Participant,"+_task_fields;
         _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete,_Hidden|Participant_uid";
         //-------------------------------------
@@ -18,13 +18,9 @@
         _cell_render=function(records,I,field,td,set_value,source){
             _default_cell_render(records,I,field,td,set_value,source);
             switch(field){
-                case 'File_1':
-                case 'File_2':
-                case 'File_3':
-                case 'File_4':
-                case 'File_5':
-                case 'File_6':
-                case 'File_7':
+                case 'pm_upload':
+                case 'am_upload':
+                case 'questionnaire_upload':
                     VmInclude:__PARTS__/grid/field_file.js
                 break;
             }
